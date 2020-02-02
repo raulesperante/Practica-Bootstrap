@@ -1,3 +1,35 @@
-.encabezado{
-    display: flex;
+
+$texto:green;
+$principal: blue;
+$secundario: orange;
+
+.container{
+    border: 1px solid red;
+}
+
+.row{
+    border: 2px solid blue;
+}
+
+/* Etiquetas que son hijas directas de row */
+.row>*{
+    border: 2px solid green;
+}
+
+.row div{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+#yellow{
+    background: yellow;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+*/
+#celeste{
+    background: yellowgreen;
 }

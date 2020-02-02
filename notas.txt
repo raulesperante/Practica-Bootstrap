@@ -1,3 +1,111 @@
 Bootstrap
 
 https://hackerthemes.com/bootstrap-cheatsheet/
+
+
+Estructura
+<div class="container">
+    <div class="row">
+    <div class="col-12">Hola Mundo</div>
+    </div>
+</div>
+
+La clase container tiene margenes a izquierda y derecha
+container-fluid no tiene margenes
+
+Las row tienen que ser hijos directos de un contenedor
+Las columnas deben ser hijos directos de una row
+Dentro de las filas solo van columnas. No podemos crear contenido 
+directamente en dentro de las filas.
+El contenido se crea dentro de las filas
+
+Como máximo pueden haber 12 columnas dentro de una fila
+
+La clase col distribuye el espacio disponible entre la cantidad de columnas
+El ancho de las columnas se adaptaría al contenido
+
+Bootstrap maneja 5 contextos
+
+Los tamaños de pantalla
+col-x donde x es la cantidad de columnas a utilizar, el ancho
+
+------------------------------
+col- por defecto >=0
+col-sm >= 576px
+col-md >= 768px
+col-lg >= 992px
+col-xl >= 1200px
+------------------------------
+
+col- todos los tamaños de pantalla
+col-4 
+col-4
+col-4
+
+No importa el tamaño siempre se usará 4 columnas para cada una
+
+------------------------------
+=> 576
+col-sm-*
+
+
+----------------------
+offset lo que hace es correr la columna a la derecha
+<div class="col-3 offset-2" id="yellow">Col x</div>
+
+Hay contextos para offset
+
+offset-sm-2
+offset-sm-0
+
+Anidar columnas en bootstrap, creo dentro de una columna un row
+    <div class="container">
+      <div class="row">
+        <div class="col-6" id="yellow">
+          <div class="row">
+            <div class="col-2">columna 1</div>
+            <div class="col-10">columna 2</div>
+          </div>
+        </div>
+        <div class="col-6" id="yellow">Col x</div>
+      </div>
+    </div>
+
+
+Ordenamiento de columnas con order-first
+      <div class="row">
+        <div class="col-2 bg-primary">Col 1</div>
+        <div class="col-2 bg-secondary">Col 2</div>
+        <div class="col-2 bg-success order-first">Col 3</div>
+        <div class="col-6 bg-danger">Col 3</div>
+      </div>
+
+Con contextos
+order-md-first
+
+Para que se muestre ultima
+order-md-last
+
+Rango a utilizar del 0 al 12
+Bootstrap ordena los elementos de menor a mayor
+
+Text alignment 
+Para alinear el texto en bootstrap es sencible a contextos
+Ejemplo: text-center
+Con contexto:
+text-sm-center
+
+Transformaciones de texto
+    <h1 class="text-uppercase">Hola soy un título</h1>
+    Para transformar a negrita .font-weight-bold
+  Para cursiva .font-weight-italy
+
+  Para texto más chicos .small, reduce la clase al 80%
+
+  Colores por defecto 
+  .text-primary, etc
+
+bg-dark Para background
+
+
+
