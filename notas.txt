@@ -107,5 +107,104 @@ Transformaciones de texto
 
 bg-dark Para background
 
+--------------------------
+Padding y Margin sensibles a contextos
+
+// Para todos los lados
+m-1
+
+mt-1 // margin top de 0,25rem
+
+Para centrar un elemento mx-auto
+Es lógico porque lo centra en x
+
+Contextos
+my-sm-4
+
+// Padding igual que el margin
+
+p-5 padding para todos los lados
+
+FLEXBOX
+d-flex es el display flex
+
+Tiene distintos contextos
+d-sm-flex
+
+Quitar entorno flexible
+d-sm-block
+
+CAMBIANDO LA ORIENTACION CON FLEXBOX
+En flex-direction: row; se muestra todo en una fila
+por defecto
+
+flex-direction: column;
+En bootstrap flex-column
+
+ALINEACION EN EL EJE HORIZONTAL
+Por defecto, los hijos se alinean en forma horizontal 
+Al padre
+justify-content: center;
+
+En bootstrap
+justify-content-start /center /end / between / around
+
+EJE SECUNDARIO O VERTICAL
+align-items: stretch por defecto la altura de los hijos,
+es igual a la de los padres
+align-items: flex-start; altura mínima del hijo
+align-items: center;
+
+En bootstrap
+align-items-start /center /end /stretch
+
+
+ALINEACION INDIVIDUAL DE LOS HIJOS EN EL EJE SECUNDARIO
+Esto podría utilizarse para hacer mejores diseños
+
+Las clases para bootstrap son:
+align-self-start /center /end / stretch
+
+FLEX FILL para llenar todo el contenido del padre
+Se aplica a los hijos
+flex-fill
+
+// Ordenar
+order-1
+
+BORDER
+La clase es border para todos los lados
+
+Tipos: border-top /right /bottom /left
+
+Quitar bordes: border-0
+
+Colores para bordes
+border border-primary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
